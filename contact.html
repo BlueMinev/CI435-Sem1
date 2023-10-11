@@ -4,6 +4,8 @@
     <head>
 		<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
 		<title>Contact me </title><!--web page title -->
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet /">
 	</head>
 
 <body>
@@ -11,52 +13,48 @@
 	<div id="wrapper">
 	<!--The 'wrapper' contains all the page content-->
 	
-    <header><!--The main heading for the page -->
-		<h1>page heading</h1>
-		<h2>sub-heading</h2>
+    <header class="banner"><!--The main heading for the page -->
+		<h1>Contact Me</h1>
+
 	</header>
 	
     <nav><!--The primary navigation for the page -->
-	<ul>
+	<ul class="menu">
 		<li><a href="index.html">Learning Journal</a></li>
 		<li><a href="tutorial.html">Tutorial</a></li>
-        <li>Contact me</li>
+        <li><a href="contact.html">Contact me</a></li>
 	</ul>
 	</nav>
     
     <main><!--The main page content -->
         
-        	<h2>Weekly Posts</h2>
-	
-    	<article>
-			<header>
-			<h3>Week 1: ...</h3>
-			</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat, risus et hendrerit consequat, ante lectus 
-porttitor tellus, eget blandit urna nibh a metus. </p>
+	<form id ="form1">
+		<fieldset>
+		<legend>Contact Me!</legend>
+			<label for="name">Name <em>(required)</em></label>
+			<input type="text" id="name" required placeholder="Forename Surname">
+			<label for="email">Email address <em>(required)</em></label>
+			<input type="email"  id="email" required>
+			<label for="url">Website address</label>
+			<input type="url" id="url" placeholder="http://" >
+			<label for="message">Your Comments: </label>
+			<textarea id="message" required></textarea>
+			<p>Would you like me to contact you? 	</p>
+				<label for="information-yes">
+					<input type="radio" id="information-yes" 
+					name="information" value="yes" class="radiobutton"><span>Yes</span> </label>
+				  <label for="information-no">
+					<input type="radio" id="information-no" 
+					name="information" value="no" class="radiobutton" checked ><span>No</span></label>
+		
+			<input type="submit" value="Click to send" >
+		</fieldset>
+	</form>
 
-        <p>Some reference here to my own reading and research, explaining what I have done and what I have learned from it.</p>
-        
-		</article>
-           
-    </main><!--Close main page content --> 
-        
-        <aside>
-        
-        	<h2>References</h2>
-            
-            	<ol>
-                	<li>...</li>
-                    <li>...</li>
-                </ol>
-            
-        </aside>    
- 
-  
 	<footer><!--Footer content -->
-		<small>&copy; 2019, author.</small>
+		<small>Contact form is not functional as of yet.</small>
 	</footer>
-
+</main>
 	</div><!--Close 'wrapper' div -->
 </body><!--Close 'body' -->
 </html><!--Close 'html' -->
